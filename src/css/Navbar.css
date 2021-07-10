@@ -1,0 +1,96 @@
+nav{
+    height:70px;
+    width:100vw;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(189, 186, 181);
+    font-size: 22px;
+    font-family: monospace;
+    position:absolute;
+}
+
+.navbarLeft{
+    display: inline;
+    float: left;
+}
+
+#navbarCompanyLogo{
+    display: inline;
+    margin-left:2vw;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+#home{
+    display: inline;
+    margin-left: 2vw;
+    line-height: 70px;
+    cursor: pointer;
+}
+
+.navbarRight{
+    display: inline;
+    float: right;
+}
+
+.navbarButton{
+    display: none;
+    height: 100%;
+    width: 40px;
+    float: right;
+    margin-right: 2vw;
+}
+
+.navbarButton span{
+    display: block;
+    height:5px;
+    width:40px;
+    background-color: white;
+}
+
+#span1{
+    margin-top:18px;
+}
+
+#span2{
+    margin-top:9.5px;
+}
+
+#span3{
+    margin-top: 9.5px;
+}
+
+#about,#blogs,#login,#logout{
+    display: inline;
+    margin-left: 2vw;
+    line-height: 70px;
+    cursor: pointer;
+}
+
+#logout{
+    margin-right:2vw;
+}
+
+#home:hover, #about:hover,#blogs:hover,#login:hover,#logout:hover{
+    color:aqua
+}
+
+@media  only screen and (max-width:600px) {
+    .navbarButton{
+        display: inline;
+    }
+
+    .navbarRight{
+        display:none;
+    }
+    .navbarRightActive{
+        position:absolute;
+        top:70px;
+    }
+
+    .navbarRightActive > div{
+        width: 100vw;
+        height: 15px;
+        line-height: 15px;
+    }
+}
