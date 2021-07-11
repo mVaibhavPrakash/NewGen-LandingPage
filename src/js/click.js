@@ -1,6 +1,5 @@
-const click = (e, toogle, setToggle) => {
+const click = (e, toggle, setToggle) => {
   e.preventDefault();
-  console.log('clicked');
   if (toggle === '') {
     setToggle('Active');
   } else {
