@@ -7,6 +7,7 @@ nav{
     font-size: 22px;
     font-family: monospace;
     position:absolute;
+    color: rgb(1, 25, 64);
 }
 
 .navbarLeft{
@@ -16,7 +17,7 @@ nav{
 
 #navbarCompanyLogo{
     display: inline;
-    margin-left:2vw;
+    margin-left:3vw;
     cursor: pointer;
     font-size: 30px;
 }
@@ -28,7 +29,7 @@ nav{
     cursor: pointer;
 }
 
-.navbarRight{
+.navbarRight,.navbarRightActive{
     display: inline;
     float: right;
 }
@@ -38,7 +39,7 @@ nav{
     height: 100%;
     width: 40px;
     float: right;
-    margin-right: 2vw;
+    margin-right: 3vw;
 }
 
 .navbarButton span{
@@ -62,13 +63,13 @@ nav{
 
 #about,#blogs,#login,#logout{
     display: inline;
-    margin-left: 2vw;
+    margin-left: 3vw;
     line-height: 70px;
     cursor: pointer;
 }
 
 #logout{
-    margin-right:2vw;
+    margin-right:3vw;
 }
 
 #home:hover, #about:hover,#blogs:hover,#login:hover,#logout:hover{
@@ -80,12 +81,19 @@ nav{
         display: inline;
     }
 
+    #home{
+        margin-left:6vw;
+    }
+
     .navbarRight{
         display:none;
     }
     .navbarRightActive{
         position:absolute;
+        display: block;
+        float: none;
         top:70px;
+        background-color: rgb(189, 186, 181);
     }
 
     .navbarRightActive #about, .navbarRightActive #blogs, .navbarRightActive #login, .navbarRightActive #logout{
@@ -93,5 +101,11 @@ nav{
         width: 100vw;
         height: 35px;
         line-height: 35px;
+        margin: 0;
+        padding-left:3vw ;
+        border-bottom:1.3px solid white;
+    }
+    .navbarRightActive #about{
+        border-top: 1.3px solid white;
     }
 }
