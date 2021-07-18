@@ -5,7 +5,7 @@ import click from '../js/click.js'
 const Navbar = () => {
     const [toggle,setToggle] = useState('');
     return (
-        <nav>
+        <nav className='nav'>
             <div className='navbarLeft'>
                 <a id="navbarCompanyLogo">Company</a>
                 <a id="home">Home</a>
