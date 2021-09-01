@@ -29,6 +29,10 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
+        test: /\.(svg|eot|woff|woff2|ttf)$/,
+        use: ['file-loader'],
+      },
+      {
         test: /\.(png|jpg)$/,
         type: 'asset/resource',
       },
