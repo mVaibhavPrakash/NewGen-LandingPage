@@ -33,7 +33,7 @@ module.exports = {
         use: ['file-loader'],
       },
       {
-        test: /\.(png|jpg)$/,
+        test: /\.(png|jpg|webp)$/,
         type: 'asset/resource',
       },
     ],

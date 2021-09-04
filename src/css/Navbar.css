@@ -1,13 +1,10 @@
 .nav{
-    height:70px;
+    height:0.7rem;
     width:100vw;
-    margin: 0;
-    padding: 0;
     background-color: white;
     font-family: monospace;
-    position:absolute;
-    color: #2d3e50;
-    font-size: 20px;
+    position:fixed;
+    font-size: 0.2rem;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
@@ -19,14 +16,14 @@
 #navbarCompanyLogo{
     display: inline;
     margin-left:3vw;
-    cursor: pointer;
-    font-size: 30px;
+    font-size: 0.3rem;
+    color:#4ba4fa;
 }
 
 #home{
     display: inline;
     margin-left: 2vw;
-    line-height: 70px;
+    line-height: 0.7rem;
     cursor: pointer;
 }
 
@@ -38,34 +35,34 @@
 .navbarButton{
     display: none;
     height: 100%;
-    width: 40px;
+    width: 0.4rem;
     float: right;
     margin-right: 3vw;
 }
 
 .navbarButton span{
     display: block;
-    height:5px;
-    width:40px;
-    background-color: #2d3e50;
+    height:0.05rem;
+    width:0.4rem;
+    background-color: #4ba4fa;
 }
 
 #span1{
-    margin-top:18px;
+    margin-top:0.18rem;
 }
 
 #span2{
-    margin-top:9.5px;
+    margin-top:0.095rem;
 }
 
 #span3{
-    margin-top: 9.5px;
+    margin-top: 0.095rem;
 }
 
 #about,#blogs,#login,#logout{
     display: inline;
     margin-left: 3vw;
-    line-height: 70px;
+    line-height: 0.7rem;
     cursor: pointer;
 }
 
@@ -74,7 +71,7 @@
 }
 
 #home:hover, #about:hover,#blogs:hover,#login:hover,#logout:hover{
-    color:aqua
+    color:#4fe0c0;
 }
 
 @media  only screen and (max-width:600px) {
@@ -93,19 +90,19 @@
         position:absolute;
         display: block;
         float: none;
-        top:70px;
+        top:0.7rem;
         background-color: white;
-        color: #2d3e50;
+        color: #4ba4fa;
     }
 
     .navbarRightActive #about, .navbarRightActive #blogs, .navbarRightActive #login, .navbarRightActive #logout{
         display: block;
         width: 100vw;
-        height: 35px;
-        line-height: 35px;
+        height: 0.7rem;
+        line-height: 0.7rem;
         margin: 0;
         padding-left:3vw ;
-        border-bottom:0.1px solid #2d3e50;
+        border-bottom:0.1px solid #4ba4fa;
     }
     .navbarRightActive #about{
         border-top: 0.1px solid white;
