@@ -1,6 +1,8 @@
 #top{
+    width:70vw;
+    margin: 0 auto;
     margin-top:2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.7rem;
     display:grid;
     grid-template-columns:60% 40%;
     grid-template-rows:repeat(1,1fr);
@@ -8,27 +10,34 @@
 
 #top1-content{
     padding-top:5%;
-    font-size:40px;
-    color:#4ba4fa;
-    width:80%;
-    margin-left: 20%;
+    font-size:0.4rem;
     padding:10px 10px 10px 10px;
 }
 
-#top1-content p{
+#top1-p{
     font-size: 0.5rem;
     font-weight: 800;
-    font-style: italic;
     word-wrap: break-word;
+    color: #2d386e;
+    letter-spacing: -0.025em;
 }
 
-#top1-button{
+.top1-button{
     background-color:#4fe0c0;
-    margin-top: 0.3rem;
-    color: white;
+    margin-top: 0.5rem;
+    color: #fdf7ff;
+    font-weight: 400;
     border:none;
-    width:22%;
+    width:28%;
     height:0.5rem;
     font-size:0.25rem;
-    border-radius:0.25rem;
+    border-radius:0.15rem;
+}
+#top1-para{
+    font-size: 0.3rem;
+    font-weight: 200;
+    word-wrap: break-word;
+    color: #2d386e;
+    letter-spacing: -0.025em;
+    margin-top: 0.15rem;
 }

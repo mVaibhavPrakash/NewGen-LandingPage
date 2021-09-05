@@ -1,7 +1,35 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faGithub, faGoogle, faInstagram, faTwitter, faYoutube} from '@fortawesome/free-brands-svg-icons'
 import '../css/Footer.css'
 
 const Footer = () => {
     return (
+
+    <footer id='footer'>
+        <div id='footer-social'>
+            <FontAwesomeIcon className='footer-icon' icon={faGithub}/>
+            <FontAwesomeIcon className='footer-icon' icon={faFacebook}/>
+            <FontAwesomeIcon className='footer-icon' icon={faTwitter}/>
+            <FontAwesomeIcon className='footer-icon instagram' icon={faInstagram}/>
+            <FontAwesomeIcon className='footer-icon youtube' icon={faYoutube}/>
+            <FontAwesomeIcon className='footer-icon google' icon={faGoogle}/>
+        </div>
+        <div className="footer-links">
+            <a href="">Sitemap</a>
+            <a href="">About</a>
+            <a href="">Privacy</a>
+            <a href="">Blogs</a>
+            <a href="">Terms of Use</a>
+            <a href="">Jobs</a>
+        </div>
+        <div id="footer-subs">
+            <p>Subscribe to our newsletter</p>
+            <input placeholder="Enter you email"/>
+        </div>
+    </footer>
+
+
+        /*
         <footer className='footer'>
             <div id="footerLogo">Company</div>
             <div className='footerMainBody'>
@@ -34,6 +62,7 @@ const Footer = () => {
                 </div>
             </div>
         </footer>
+        */
     )
 }
 

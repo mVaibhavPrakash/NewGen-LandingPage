@@ -1,0 +1,49 @@
+.cards{
+    width:70vw;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.card-icon{
+    padding-top: 0.1rem;
+    font-size: 0.5rem;
+}
+
+#cards-p{
+    font-size: 0.45rem;
+    width: 90%;
+    margin: 0 auto;
+    word-wrap: break-word;
+    text-align: center;
+    font-weight: 400;
+    color: #2d386e;
+    margin-top: 0.15rem;
+}
+
+#cards-pp{
+    font-size: 0.28rem;
+    width: 80%;
+    margin: 0 auto;
+    word-wrap: break-word;
+    text-align: center;
+    font-weight: 300;
+    color: #2d386e;
+    margin-top: 0.15rem;
+}
+
+#cards-card{
+    width:70vw;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #cards-card{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+}

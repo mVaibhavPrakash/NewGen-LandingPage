@@ -1,11 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faMarkdown,faReact} from '@fortawesome/free-brands-svg-icons'
 import {faAd,faDraftingCompass} from '@fortawesome/free-solid-svg-icons'
+import '../css/Card.css'
 
-const Card = ({obj}) => {
+const Card = ({keey,obj}) => {
     return (
-        <div className='card'>
-            <span className='card-span'><FontAwesomeIcon icon={obj.icon}/></span>
+        <div className='card' key={keey}>
+            <FontAwesomeIcon className='card-icon' icon={obj.icon}/>
             <div className="card-title">{obj.title}</div>
             <p className="card-content">{obj.content}</p>
         </div>
