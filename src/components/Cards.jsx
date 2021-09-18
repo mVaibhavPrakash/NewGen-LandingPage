@@ -43,7 +43,7 @@ const Cards = () => {
             <div id="cards-card">
                 {
                     array.map((obj,index) =>{
-                        return <Card keey={index} obj={obj} />
+                        return <Card key={index} obj={obj} />
                     })
                 }
             </div>

@@ -26,13 +26,19 @@
     background-color:#4fe0c0;
     margin-top: 0.5rem;
     color: #fdf7ff;
-    font-weight: 400;
+    font-weight: 500;
     border:none;
     width:28%;
     height:0.5rem;
     font-size:0.25rem;
     border-radius:0.15rem;
 }
+
+.top1-button:hover{
+    background-color: #d1e6fd;
+    color:#38366c;
+}
+
 #top1-para{
     font-size: 0.3rem;
     font-weight: 200;
