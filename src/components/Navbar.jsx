@@ -5,7 +5,6 @@ import click from '../js/click.js'
 const Navbar = () => {
     const [toggle,setToggle] = useState('');
     return (
-        <div>
         <nav className='nav'>
             <div className='navbarLeft'>
                 <a id="navbarCompanyLogo">Company</a>
@@ -23,8 +22,6 @@ const Navbar = () => {
                 <span id='span3'></span>
             </div>
         </nav>
-        </div>
-
     )
 }
 
