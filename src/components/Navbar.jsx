@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import { Link } from 'react-router-dom'
 import '../css/Navbar.css'
 import click from '../js/click.js'
 
@@ -11,10 +12,10 @@ const Navbar = () => {
                 <a id="home">Home</a>
             </div>
             <div className={`navbarRight${toggle}`}>
-                <a id="about">About</a>
-                <a id="blogs">Blogs</a>
-                <a id="login">Login</a>
-                <a id="logout">Logout</a>
+                <Link to={'auth'} id="about">Auth</Link>
+                <Link to={'auth'}id="blogs">Blogs</Link>
+                <Link to={'auth'}id="login">Login</Link>
+                <Link to={'auth'}id="logout">Logout</Link>
             </div>
             <div className="navbarButton" onClick={e=>{click(e,toggle,setToggle)}}>
                 <span id='span1'></span>
