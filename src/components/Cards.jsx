@@ -37,10 +37,10 @@ const Cards = () => {
         },
     ]
     return (
-        <div className='cards'>
-            <p id='cards-p'>Features that will make your blogging 10x better</p>
-            <p id="cards-pp">Content Ownership.No Ads. No Paywall. No kidding.</p>
-            <div id="cards-card">
+        <div className='lpage-cards'>
+            <p id='lpage-cards-p'>Features that will make your blogging 10x better</p>
+            <p id="lpage-cards-pp">Content Ownership.No Ads. No Paywall. No kidding.</p>
+            <div id="lpage-cards-card">
                 {
                     array.map((obj,index) =>{
                         return <Card key={index} obj={obj} />

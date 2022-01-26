@@ -1,4 +1,4 @@
-.card{
+.lpage-card{
     font-size: 0.2rem;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     padding-left: 10%;
@@ -10,20 +10,20 @@
     background-color: rgb(255, 255, 255);
 }
 
-.card-title{
-    font-size: 0.25rem;
+.lpage-card-title{
+    font-size: 0.30rem;
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
     color: #424242;
 }
 
-.card-content{
-    font-size: 0.18rem;
-    padding-bottom: 0.15rem;
+.lpage-card-content{
+    font-size: 0.36rem;
+    padding-bottom: 0.30rem;
     color: #857e73;
 }
 
-.card-icon{
+.lpage-card-icon{
     margin-top: 0.15rem;
     padding-bottom: 0.15rem;
     font-size: 0.5rem;

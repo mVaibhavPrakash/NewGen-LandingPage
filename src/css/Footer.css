@@ -1,5 +1,5 @@
 
-  #footer{
+  #lpage-footer{
       background-color:  #4ba4fa;
       width: 100vw;
       clear: both;
@@ -7,66 +7,67 @@
       bottom: 0;
   }
 
-  #footer-social{
+  #lpage-footer-social{
       width:60%;
       margin: 0 auto;
       text-align: center;
-      margin-top: 0.4rem;
-      margin-bottom: 0.4rem;
-      font-size: 0.3rem;
+      margin-top: 0.8rem;
+      margin-bottom: 0.8rem;
+      font-size: 0.6rem;
   }
 
-  #footer-social .footer-icon{
+  #lpage-footer-social .lpage-footer-icon{
       margin-right:2%;
       color:white;
   }
 
-.footer-links{
+.lpage-footer-links{
     width: 60%;
     margin: 0 auto;
-    font-size: 0.2rem;
+    font-size: 0.4rem;
     text-align: center;
 }
 
-.footer-links a{
+.lpage-footer-links a{
     text-decoration: none;
     margin-right: 3%;
     color: white;
 }
 
-.footer-links a:nth-child(1){
+.lpage-footer-links a:nth-child(1){
     margin-left:5%;
 }
 
-#footer-subs{
+#lpage-footer-subs{
     width: 60%;
     margin: 0 auto;
-    font-size: 0.2rem;
+    font-size: 0.4rem;
     text-align: center;
-    margin-top: .4rem;
+    margin-top: .8rem;
 }
 
-#footer-subs p{
+#lpage-footer-subs p{
     color:white;
-    margin-bottom: 0.15rem;
+    margin-bottom: 0.3rem;
 }
 
-#footer-subs input{
+#lpage-footer-subs input{
     background-color: #4fe0c0;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.8rem;
     width:30%;
-    height:0.3rem;
+    height:0.5rem;
     border: none;
     border-radius: 15px;
     padding:10px;
     resize: none;
     outline: none;
-    font-size: 0.15rem;
+    font-size: 0.30rem;
     color:white;
 }
 
 ::placeholder { 
     color: white;
     opacity: 1;
-    font-size: 0.15rem;
+    font-size: 0.30rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }

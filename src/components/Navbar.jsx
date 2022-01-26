@@ -6,21 +6,21 @@ import click from '../js/click.js'
 const Navbar = () => {
     const [toggle,setToggle] = useState('');
     return (
-        <nav className='nav'>
-            <div className='navbarLeft'>
-                <a id="navbarCompanyLogo">Company</a>
-                <a id="home">Home</a>
+        <nav className='lpage-nav'>
+            <div className='lpage-navbarLeft'>
+                <a id="lpage-navbarCompanyLogo">Company</a>
+                <a className='lpage-a' id="lpage-home">Home</a>
             </div>
-            <div className={`navbarRight${toggle}`}>
-                <Link to={'auth'} id="about">Auth</Link>
-                <Link to={'auth'}id="blogs">Blogs</Link>
-                <Link to={'auth'}id="login">Login</Link>
-                <Link to={'auth'}id="logout">Logout</Link>
+            <div className={`lpage-navbarRight${toggle}`}>
+                <Link to={'blog/new'} className='lpage-a' id="lpage-about">Auth</Link>
+                <Link to={'blog/new'} className='lpage-a' id="lpage-blogs">Blogs</Link>
+                <Link to={'auth/login'} className='lpage-a' id="lpage-login">Login</Link>
+                <Link to={'auth'} className='lpage-a' id="lpage-logout">Logout</Link>
             </div>
-            <div className="navbarButton" onClick={e=>{click(e,toggle,setToggle)}}>
-                <span id='span1'></span>
-                <span id='span2'></span>
-                <span id='span3'></span>
+            <div className="lpage-navbarButton" onClick={e=>{click(e,toggle,setToggle)}}>
+                <span id='lpage-span1'></span>
+                <span id='lpage-span2'></span>
+                <span id='lpage-span3'></span>
             </div>
         </nav>
     )

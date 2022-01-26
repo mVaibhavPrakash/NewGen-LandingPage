@@ -1,48 +1,48 @@
-.cards{
+.lpage-cards{
     width:70vw;
     margin: 0 auto;
-    margin-top: 0.5rem;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 6rem;
 }
 
-.card-icon{
-    padding-top: 0.1rem;
-    font-size: 0.5rem;
+.lpage-card-icon{
+    padding-top: 0.2rem;
+    font-size: 1rem;
 }
 
-#cards-p{
-    font-size: 0.45rem;
+#lpage-cards-p{
+    font-size: 0.90rem;
     width: 90%;
     margin: 0 auto;
     word-wrap: break-word;
     text-align: center;
     font-weight: 400;
     color: #2d386e;
-    margin-top: 0.15rem;
+    margin-top: 0.30rem;
 }
 
-#cards-pp{
-    font-size: 0.28rem;
+#lpage-cards-pp{
+    font-size: 0.56rem;
     width: 80%;
     margin: 0 auto;
     word-wrap: break-word;
     text-align: center;
     font-weight: 300;
     color: #2d386e;
-    margin-top: 0.15rem;
+    margin-top: 0.30rem;
 }
 
-#cards-card{
+#lpage-cards-card{
     width:70vw;
     margin: 0;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 
 @media only screen and (max-width: 600px) {
-    #cards-card{
+    #lpage-cards-card{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(3,1fr);
     }

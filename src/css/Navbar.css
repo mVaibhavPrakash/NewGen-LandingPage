@@ -1,111 +1,115 @@
-.nav{
-    height:0.7rem;
+.lpage-nav{
+    height:1.4rem;
     width:100vw;
     background-color: white;
     font-family: monospace;
     position:fixed;
-    font-size: 0.2rem;
+    font-size: 0.4rem;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     color: #2d386e;
 }
 
-.navbarLeft{
+.lpage-navbarLeft{
     display: inline;
     float: left;
 }
 
-#navbarCompanyLogo{
+#lpage-navbarCompanyLogo{
     display: inline;
     margin-left:3vw;
-    font-size: 0.3rem;
-    color:#4ba4fa;
+    font-size: 0.6rem;
+    color:#2d386e;
+}
+.lpage-a{
+    cursor: pointer;
+    text-decoration: none;
 }
 
-#home{
+#lpage-home{
     display: inline;
     margin-left: 2vw;
-    line-height: 0.7rem;
+    line-height: 1.4rem;
     cursor: pointer;
 }
 
-.navbarRight,.navbarRightActive{
+.lpage-navbarRight,.navbarRightActive{
     display: inline;
     float: right;
 }
 
-.navbarButton{
+.lpage-navbarButton{
     display: none;
     height: 100%;
-    width: 0.4rem;
+    width: 0.8rem;
     float: right;
     margin-right: 3vw;
 }
 
-.navbarButton span{
+.lpage-navbarButton span{
     display: block;
-    height:0.05rem;
-    width:0.4rem;
+    height:0.1rem;
+    width:0.8rem;
     background-color: #4ba4fa;
 }
 
-#span1{
-    margin-top:0.18rem;
+#lpage-span1{
+    margin-top:0.36rem;
 }
 
-#span2{
-    margin-top:0.095rem;
+#lpage-span2{
+    margin-top:0.19rem;
 }
 
-#span3{
-    margin-top: 0.095rem;
+#lpage-span3{
+    margin-top: 0.19rem;
 }
 
-#about,#blogs,#login,#logout{
+#lpage-about,#lpage-blogs,#lpage-login,#lpage-logout{
     display: inline;
     margin-left: 3vw;
-    line-height: 0.7rem;
+    line-height: 1.4rem;
     cursor: pointer;
 }
 
-#logout{
+#lpage-logout{
     margin-right:3vw;
 }
 
-#home:hover, #about:hover,#blogs:hover,#login:hover,#logout:hover{
+#lpage-home:hover, #lpage-about:hover,#lpage-blogs:hover,#lpage-login:hover,#lpage-logout:hover{
     color:#4fe0c0;
 }
 
 @media  only screen and (max-width:600px) {
-    .navbarButton{
+    .lpage-navbarButton{
         display: inline;
     }
 
-    #home{
+    #lpage-home{
         margin-left:6vw;
     }
 
-    .navbarRight{
+    .lpage-navbarRight{
         display:none;
     }
-    .navbarRightActive{
+    .lpage-navbarRightActive{
         position:absolute;
         display: block;
         float: none;
-        top:0.7rem;
+        top:1.4rem;
         background-color: white;
         color: #4ba4fa;
     }
 
-    .navbarRightActive #about, .navbarRightActive #blogs, .navbarRightActive #login, .navbarRightActive #logout{
+    .lpage-navbarRightActive #lpage-about, .lpage-navbarRightActive #lpage-blogs, .lpage-navbarRightActive #lpage-login, .lpage-navbarRightActive #lpage-logout{
         display: block;
         width: 100vw;
-        height: 0.7rem;
-        line-height: 0.7rem;
+        height: 1.4rem;
+        line-height: 1.4rem;
         margin: 0;
         padding-left:3vw ;
         border-bottom:0.1px solid #4ba4fa;
     }
-    .navbarRightActive #about{
+    .lpage-navbarRightActive #lpage-about{
         border-top: 0.1px solid white;
     }
 }
