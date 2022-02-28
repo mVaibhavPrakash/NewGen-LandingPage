@@ -4,5 +4,4 @@
     grid-template-columns: auto;
     grid-template-rows: repeat(5,auto);
     min-height: 100vh;
-    
 }

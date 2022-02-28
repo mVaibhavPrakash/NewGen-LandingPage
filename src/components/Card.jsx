@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../css/Card.css'
-
 const Card = ({obj}) => {
     return (
         <div className='lpage-card'>

@@ -1,10 +1,10 @@
 const click = (e, toggle, setToggle) => {
-  e.preventDefault();
+  e.preventDefault()
   if (toggle === '') {
-    setToggle('Active');
+    setToggle('Active')
   } else {
-    setToggle('');
+    setToggle('')
   }
-};
+}
 
-export default click;
+export default click

@@ -9,17 +9,28 @@
     color: #2d386e;
 }
 
+.lpage-logo{
+    position: relative;
+    width:1.8rem;
+    height:1rem;
+    line-height: 1.4rem;
+}
+
+#lpage-navbarCompanyLogo{
+    position: absolute;
+    top:0.7rem;
+    left:6vw;
+    height:100%;
+    width:1.8rem;
+    transform: translate(-50%, -50%);
+    color:#2d386e;
+}
+
 .lpage-navbarLeft{
     display: inline;
     float: left;
 }
 
-#lpage-navbarCompanyLogo{
-    display: inline;
-    margin-left:3vw;
-    font-size: 0.6rem;
-    color:#2d386e;
-}
 .lpage-a{
     cursor: pointer;
     text-decoration: none;
@@ -27,7 +38,7 @@
 
 #lpage-home{
     display: inline;
-    margin-left: 2vw;
+    margin-left: 6vw;
     line-height: 1.4rem;
     cursor: pointer;
 }
@@ -35,6 +46,7 @@
 .lpage-navbarRight,.navbarRightActive{
     display: inline;
     float: right;
+    margin-right: 6vw;
 }
 
 .lpage-navbarButton{

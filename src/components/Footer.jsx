@@ -2,10 +2,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGithub, faGoogle, faInstagram, faTwitter, faYoutube} from '@fortawesome/free-brands-svg-icons'
 import '../css/Footer.css'
 
-const Footer = () => {
+const Footer = ({footerRef}) => {
     return (
 
-    <footer id='lpage-footer'>
+    <div id='lpage-footer' ref={footerRef}>
         <div id='lpage-footer-social'>
             <FontAwesomeIcon className='lpage-footer-icon' icon={faGithub}/>
             <FontAwesomeIcon className='lpage-footer-icon' icon={faFacebook}/>
@@ -26,7 +26,7 @@ const Footer = () => {
             <p>Subscribe to our newsletter</p>
             <input placeholder="Enter you email"/>
         </div>
-    </footer>
+    </div>
 
 
         /*
