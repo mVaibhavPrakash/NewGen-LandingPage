@@ -2,8 +2,6 @@
       background-color:  #4ba4fa;
       width: 100vw;
       clear: both;
-      position: absolute;
-      bottom: 0;
   }
 
   #lpage-footer-social{
@@ -54,7 +52,7 @@
     background-color: #4fe0c0;
     margin-bottom: 0.8rem;
     width:30%;
-    height:0.5rem;
+    height:0.4rem;
     border: none;
     border-radius: 15px;
     padding:10px;

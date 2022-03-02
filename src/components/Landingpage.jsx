@@ -1,4 +1,4 @@
-import React,{ useEffect} from 'react';
+import React,{ useEffect,useContext} from 'react';
 import Top from './Top';
 import Cards from './Cards';
 import Navbar from './Navbar'

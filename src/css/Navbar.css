@@ -1,9 +1,11 @@
 .lpage-nav{
+    z-index: 100;
     height:1.4rem;
     width:100vw;
     background-color: white;
     font-family: monospace;
     position:fixed;
+    top: 0;
     font-size: 0.4rem;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     color: #2d386e;
@@ -90,6 +92,44 @@
 #lpage-home:hover, #lpage-about:hover,#lpage-blogs:hover,#lpage-login:hover,#lpage-logout:hover{
     color:#4fe0c0;
 }
+
+.dropbtn {
+    color: #2d386e;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 2.5vw;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top:0.87rem;
+    min-width: 170px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #2d386e;
+    padding: 10px 14px;
+    background-color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover{
+    color: rgb(79, 224, 192)
+  }
+
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {color: rgb(79, 224, 192)}
 
 @media  only screen and (max-width:600px) {
     .lpage-navbarButton{

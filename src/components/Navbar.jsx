@@ -17,19 +17,24 @@ const Navbar = () => {
             <a className='lpage-a' id="lpage-home">Home</a>
             <div className={`lpage-navbarRight${toggle}`}>
                 {   
-                    !User ? <Link to={'auth/signup'} className='lpage-a' id="lpage-about">Signup</Link>:''
+                    Object.keys(User).length === 0 ? <Link to={'auth/signup'} className='lpage-a' id="lpage-about">Signup</Link>:''
                 }
                 {
-                    User?<Link to={'blog/new'} className='lpage-a' id="lpage-blogs">Blogs</Link>:''
+                    Object.keys(User).length !== 0 ?<Link to={'blog/new'} className='lpage-a' id="lpage-blogs">Blogs</Link>:''
                 }
                 {   
-                    !User ? <Link to={'auth/login'} className='lpage-a' id="lpage-login">Login</Link> : ''
+                    Object.keys(User).length === 0 ? <Link to={'auth/login'} className='lpage-a' id="lpage-login">Login</Link> : ''
                 }
                 {
-                    User?<Link to={'/profile:user.id'} className='lpage-a' id="lpage-logout" >{User}</Link>:''
-                }
-                {
-                    User?<Link to={'/'} className='lpage-a' id="lpage-logout" onClick={e =>setUser('')}>Logout</Link>:''
+                    Object.keys(User).length !== 0 ?
+                        <div className="dropdown">
+                            <span className="dropbtn">{User.firstname}</span>
+                            <div className="dropdown-content">
+                                <Link to={'/username'}>Profile</Link>
+                                <Link to={'/dashboard'} >Dashboard</Link>
+                                <Link to={'/logout'} onClick={e =>setUser('')}>Logout</Link>
+                            </div>
+                        </div> : ''
                 }
             </div>
             <div className="lpage-navbarButton" onClick={e=>{click(e,toggle,setToggle)}}>
