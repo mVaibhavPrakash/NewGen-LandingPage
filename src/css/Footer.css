@@ -1,5 +1,5 @@
-#lpage-footer{
-      background-color:  #4ba4fa;
+.lpage-footer{
+      background-color:  rgb(50, 190, 143);
       width: 100vw;
       clear: both;
   }
@@ -49,7 +49,7 @@
 }
 
 #lpage-footer-subs input{
-    background-color: #4fe0c0;
+    background-color: white;
     margin-bottom: 0.8rem;
     width:30%;
     height:0.4rem;
@@ -59,7 +59,7 @@
     resize: none;
     outline: none;
     font-size: 0.30rem;
-    color:white;
+    color:black;
 }
 
 ::placeholder { 

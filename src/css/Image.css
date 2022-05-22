@@ -3,3 +3,7 @@
         height: 70%;
     }
 }
+
+.img {
+    object-fit: contain;
+}

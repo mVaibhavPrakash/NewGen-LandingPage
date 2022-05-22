@@ -2,7 +2,7 @@ import '../css/Image.css'
 
 const Image = ({clas,src,width,height}) => {
     return (
-        <img className={clas} src={src} width={width} height={height} />
+        <img className={`${clas} img`} src={src} width={width} height={height} />
     )
 }
 

@@ -1,6 +1,6 @@
 .lpage-card{
     font-size: 0.2rem;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    box-shadow: 0 3px 10px #8080bd;
     padding-left: 10%;
     padding-right: 10%;
     margin-right: 5%;
@@ -11,16 +11,16 @@
 }
 
 .lpage-card-title{
-    font-size: 0.30rem;
+    font-size: 0.40rem;
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
-    color: #424242;
+    color: #182b81;
 }
 
 .lpage-card-content{
-    font-size: 0.36rem;
+    font-size: 0.33rem;
     padding-bottom: 0.30rem;
-    color: #857e73;
+    color: #8080bd;
 }
 
 .lpage-card-icon{

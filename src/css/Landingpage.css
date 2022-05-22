@@ -5,3 +5,17 @@
     grid-template-rows: repeat(5,auto);
     min-height: 100vh;
 }
+
+.auth{
+	position: relative;
+	top:1rem;
+}
+
+.auth-wave{
+	position: fixed;
+	top:1.4rem;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	z-index: -1;
+}

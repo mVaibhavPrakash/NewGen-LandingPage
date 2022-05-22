@@ -1,14 +1,25 @@
-import {useContext, useState} from 'react'
-import { Link, useNavigate} from 'react-router-dom'
+import { useState} from 'react'
+import { Link, Navigate, useNavigate} from 'react-router-dom'
+import { useSelector,useDispatch } from 'react-redux'
 import img from '../../../../../public/img/newgen.png'
 import '../css/Navbar.css'
 import click from '../js/click'
-import { AuthContext } from '../../../../hooks/AuthContext'
+import {setLoggedIn} from '../../../../redux/slices/authSlice'
 
+const logout = (e,dispatch,navigate) =>{
+    e.preventDefault()
+    dispatch(setLoggedIn())
+    localStorage.removeItem('id')
+    localStorage.removeItem('username')
+    localStorage.removeItem('firstname')
+    navigate('/')
+}
 
 const Navbar = () => {
     const [toggle,setToggle] = useState('');
-    const [User,setUser] = useContext(AuthContext);
+    const User = useSelector((state) => state.auth)
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
     return (
         <nav className='lpage-nav'>
             <div className="lpage-logo lpage-navbarLeft">
@@ -17,22 +28,22 @@ const Navbar = () => {
             <a className='lpage-a' id="lpage-home">Home</a>
             <div className={`lpage-navbarRight${toggle}`}>
                 {   
-                    Object.keys(User).length === 0 ? <Link to={'auth/signup'} className='lpage-a' id="lpage-about">Signup</Link>:''
+                    !User.isLoggedIn ? <Link to={'auth/signup'} className='lpage-a' id="lpage-about">Signup</Link>:''
                 }
                 {
-                    Object.keys(User).length !== 0 ?<Link to={'blog/new'} className='lpage-a' id="lpage-blogs">Blogs</Link>:''
+                    User.profileCreated ?<Link to={'blog/new'} className='lpage-a' id="lpage-blogs">Blogs</Link>:''
                 }
                 {   
-                    Object.keys(User).length === 0 ? <Link to={'auth/login'} className='lpage-a' id="lpage-login">Login</Link> : ''
+                    !User.isLoggedIn ? <Link to={'auth/login'} className='lpage-a' id="lpage-login">Login</Link> : ''
                 }
                 {
-                    Object.keys(User).length !== 0 ?
+                    User.isLoggedIn ?
                         <div className="dropdown">
                             <span className="dropbtn">{User.firstname}</span>
                             <div className="dropdown-content">
                                 <Link to={'/username'}>Profile</Link>
                                 <Link to={'/dashboard'} >Dashboard</Link>
-                                <Link to={'/logout'} onClick={e =>setUser('')}>Logout</Link>
+                                <Link to={'/'} onClick={e => logout(e,dispatch,navigate)}>Logout</Link>
                             </div>
                         </div> : ''
                 }

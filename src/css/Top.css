@@ -23,9 +23,9 @@
 }
 
 .lpage-top1-button{
-    background-color:#4fe0c0;
+    background-color:white;
     margin-top: 1rem;
-    color: #fdf7ff;
+    color: #38366c;
     font-weight: 500;
     border:none;
     width:28%;
@@ -36,7 +36,7 @@
 
 .lpage-top1-button:hover{
     background-color: #d1e6fd;
-    color:#38366c;
+    color:rgb(50, 190, 143)
 }
 
 #lpage-top1-para{

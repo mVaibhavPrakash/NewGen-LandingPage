@@ -1,11 +1,19 @@
+import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGithub, faGoogle, faInstagram, faTwitter, faYoutube} from '@fortawesome/free-brands-svg-icons'
 import '../css/Footer.css'
 
 const Footer = ({footerRef}) => {
+
+  useEffect(() =>{
+    return () => {
+      if(footerRef !== null && footerRef.current)
+        footerRef.current.style.width='100vw'
+      }
+  })
     return (
 
-    <div id='lpage-footer' ref={footerRef}>
+    <div className='lpage-footer' ref={footerRef}>
         <div id='lpage-footer-social'>
             <FontAwesomeIcon className='lpage-footer-icon' icon={faGithub}/>
             <FontAwesomeIcon className='lpage-footer-icon' icon={faFacebook}/>
