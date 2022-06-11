@@ -7,7 +7,7 @@ import '../css/Top.css'
 const Top = () => {
     const isProfile=  useSelector(state => state.auth.profileCreated);
     const dispatch = useDispatch();
-    console.log(isProfile)
+    console.log(isProfile+'ss')
     return (
         <div id="lpage-top">
             <div id="lpage-top1-content">

@@ -100,22 +100,35 @@
     padding : 0;
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;
-    width: 150px;
+    width: 1rem;
     line-height: 1rem;
     text-align: center;
     border: solid white 2px;
   }
   
+  #btn-blog{
+    border: none;
+  }
+
+  #drp-blog{
+    width: max-content;
+  }
+
   .dropdown {
-    position: relative;
     display: inline-block;
     color: white;
     margin-left: 2.5vw;
     box-sizing: border-box;
+    cursor: pointer;
   }
   
+  #lpage-profile{
+    border-radius: 50%;
+  }
+
   .dropdown-content {
     display: none;
+    font-size: 0.3rem;
     position: absolute;
     top:1.39rem;
     min-width: 154px;
@@ -137,7 +150,7 @@
 
   .dropdown:hover .dropdown-content {display: block;}
   
-  .dropdown:hover .dropbtn {color: white}
+  .dropdown:hover .dropbtn {color: #2d386e;}
 
 @media  only screen and (max-width:768px) {
 
@@ -164,19 +177,19 @@
         display:none;
     }
     .lpage-navbarRightActive{
-        position:absolute;
+        position:relative;
         display: block;
         float: none;
-        top:2rem;
         background-color: white;
         color: rgb(50, 190, 143);
     }
 
-     #lpage-about, .lpage-navbarRightActive #lpage-blogs, .lpage-navbarRightActive #lpage-login, .lpage-navbarRightActive #lpage-logout{
+     #lpage-about, .dropdown, .lpage-navbarRightActive #lpage-blogs, .lpage-navbarRightActive #lpage-login, .lpage-navbarRightActive #lpage-logout{
         display: block;
         width: 100vw;
         height: 2rem;
         line-height: 2rem;
+        font-size: 0.4rem;
         margin: 0;
         padding-left:3vw ;
         border-bottom:0.1px solid rgb(50, 190, 143);
@@ -184,4 +197,26 @@
     .lpage-navbarRightActive #lpage-about{
         border-top: 0.1px solid white;
     }
+
+    .dropdown-content{
+        top: 0;
+        position: relative;
+    }
+
+    .lpage-a{
+        color:rgb(50, 190, 143);
+    }
+
+    .dropbtn{
+        border: solid rgb(50, 190, 143) 2px;
+        color: rgb(50, 190, 143);
+    }
+
+    .dropdown-content a {
+        padding: 5px;
+        height: 1.2rem;
+        line-height: 1.2rem;
+        font-size: 0.4rem;
+    }
+
 }

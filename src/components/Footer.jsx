@@ -15,12 +15,12 @@ const Footer = ({footerRef}) => {
 
     <div className='lpage-footer' ref={footerRef}>
         <div id='lpage-footer-social'>
-            <FontAwesomeIcon className='lpage-footer-icon' icon={faGithub}/>
-            <FontAwesomeIcon className='lpage-footer-icon' icon={faFacebook}/>
-            <FontAwesomeIcon className='lpage-footer-icon' icon={faTwitter}/>
-            <FontAwesomeIcon className='lpage-footer-icon lpage-instagram' icon={faInstagram}/>
-            <FontAwesomeIcon className='lpage-footer-icon lpage-youtube' icon={faYoutube}/>
-            <FontAwesomeIcon className='lpage-footer-icon lpage-google' icon={faGoogle}/>
+            <a href='https://github.com/mVaibhavPrakash/NewGen' target='_blank'><FontAwesomeIcon className='lpage-footer-icon' icon={faGithub}/></a>
+            <a href='https://github.com/mVaibhavPrakash/NewGen' target='_blank'><FontAwesomeIcon className='lpage-footer-icon' icon={faFacebook}/></a>
+            <a href='https://github.com/mVaibhavPrakash/NewGen' target='_blank'><FontAwesomeIcon className='lpage-footer-icon' icon={faTwitter}/></a>
+            <a href='https://github.com/mVaibhavPrakash/NewGen' target='_blank'><FontAwesomeIcon className='lpage-footer-icon lpage-instagram' icon={faInstagram}/></a>
+            <a href='https://github.com/mVaibhavPrakash/NewGen' target='_blank'><FontAwesomeIcon className='lpage-footer-icon lpage-youtube' icon={faYoutube}/></a>
+            <a href='https://github.com/mVaibhavPrakash/NewGen' target='_blank'><FontAwesomeIcon className='lpage-footer-icon lpage-google' icon={faGoogle}/></a>
         </div>
         <div className="lpage-footer-links">
             <a href="">Sitemap</a>
