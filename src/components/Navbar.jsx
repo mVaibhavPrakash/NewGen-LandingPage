@@ -6,6 +6,7 @@ import '../css/Navbar.css'
 import click from '../js/click'
 import {setLoggedIn} from '../../../../redux/slices/authSlice'
 import { setUser } from '../../../../redux/slices/authSlice'
+import { useRef } from 'react'
 
 const logout = (e,dispatch,navigate) =>{
     e.preventDefault()
@@ -19,19 +20,23 @@ const Navbar = () => {
     const User = useSelector((state) => state.auth)
     const dispatch = useDispatch();
     const navigate = useNavigate();
+    const dropbtnref = useRef(null);
     useEffect(()=>{
         const userData = JSON.parse(localStorage.getItem('userData'))
         if(User.username==='' && userData){
             dispatch(setUser({username:userData.username,firstname:userData.firstname}))
             dispatch(setLoggedIn())
         }
+        dropbtnref.current.addEventListener('click',()=>{
+            navigate('/blog/new')
+        })
     },[])
     return (
         <nav className='lpage-nav'>
             <div className="lpage-logo lpage-navbarLeft">
                 <img id="lpage-navbarCompanyLogo" src={img} alt='img'/>
             </div>
-            <a className='lpage-a' id="lpage-home">Home</a>
+            <Link to={'/'} className='lpage-a' id="lpage-home" >Home</Link>
             <div className={`lpage-navbarRight${toggle}`}>
                 {   
                     /*!User.isLoggedIn ? */<Link to={'/auth/signup'} className='lpage-a' id="lpage-about">Signup</Link>/*:''*/
@@ -39,10 +44,10 @@ const Navbar = () => {
                 {
                     /*User.profileCreated ?*/
                     <div className="dropdown" >
-                            <span className="dropbtn" id='btn-blog'>Blogs</span>
-                            <div className="dropdown-content" id='drp-blog'>
+                            <span className="dropbtn" id='btn-blog' ref={dropbtnref}>Blogs</span>
+                            <div className="dropdown-content" id='drp-blog' >
                                 <Link to={'/blog/new'}>Create New</Link>
-                                <Link to={'/dashboard'} >Bulk Upload</Link>
+                                <Link to={'/blog/bulkupload'} >Bulk Upload</Link>
                             </div>
                     </div> /*: ''*/
                 }

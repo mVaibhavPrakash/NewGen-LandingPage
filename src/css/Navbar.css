@@ -124,6 +124,8 @@
   
   #lpage-profile{
     border-radius: 50%;
+    background-color: white;
+    color: rgb(79, 224, 192) ;
   }
 
   .dropdown-content {
@@ -145,7 +147,7 @@
   }
   
   .dropdown-content a:hover{
-    color: rgb(79, 224, 192)
+    color: rgb(79, 224, 192);
   }
 
   .dropdown:hover .dropdown-content {display: block;}
