@@ -1,35 +1,35 @@
 .lpage-cards{
     width:70vw;
     margin: 0 auto;
-    margin-top: 1rem;
-    margin-bottom: 6rem;
+    margin-top: 1.2rem;
+    margin-bottom: 7rem;
 }
 
 .lpage-card-icon{
-    padding-top: 0.2rem;
-    font-size: 1rem;
+    padding-top: 0.3rem;
+    font-size: 1.2rem;
 }
 
 #lpage-cards-p{
-    font-size: 0.90rem;
+    font-size: 1rem;
     width: 90%;
     margin: 0 auto;
     word-wrap: break-word;
     text-align: center;
     font-weight: 400;
     color: #2d386e;
-    margin-top: 0.30rem;
+    margin-top: 0.40rem;
 }
 
 #lpage-cards-pp{
-    font-size: 0.56rem;
+    font-size: 0.66rem;
     width: 80%;
     margin: 0 auto;
     word-wrap: break-word;
     text-align: center;
     font-weight: 300;
     color: #2d386e;
-    margin-top: 0.30rem;
+    margin-top: 0.40rem;
 }
 
 #lpage-cards-card{

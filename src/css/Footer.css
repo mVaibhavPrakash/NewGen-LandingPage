@@ -8,9 +8,9 @@
       width:60%;
       margin: 0 auto;
       text-align: center;
-      margin-top: 0.8rem;
-      margin-bottom: 0.8rem;
-      font-size: 0.6rem;
+      margin-top: 0.9rem;
+      margin-bottom: 0.9rem;
+      font-size: 0.7rem;
   }
 
   #lpage-footer-social .lpage-footer-icon{
@@ -21,7 +21,7 @@
 .lpage-footer-links{
     width: 60%;
     margin: 0 auto;
-    font-size: 0.4rem;
+    font-size: 0.5rem;
     text-align: center;
 }
 
@@ -38,33 +38,33 @@
 #lpage-footer-subs{
     width: 60%;
     margin: 0 auto;
-    font-size: 0.4rem;
+    font-size: 0.5rem;
     text-align: center;
-    margin-top: .8rem;
+    margin-top: .9rem;
 }
 
 #lpage-footer-subs p{
     color:white;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.4rem;
 }
 
 #lpage-footer-subs input{
     background-color: white;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.9rem;
     width:30%;
-    height:0.4rem;
+    height:0.5rem;
     border: none;
     border-radius: 15px;
     padding:10px;
     resize: none;
     outline: none;
-    font-size: 0.30rem;
+    font-size: 0.40rem;
     color:black;
 }
 
 ::placeholder { 
     color: white;
     opacity: 1;
-    font-size: 0.30rem;
+    font-size: 0.40rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }

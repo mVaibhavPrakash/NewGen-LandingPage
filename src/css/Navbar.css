@@ -1,28 +1,28 @@
 .lpage-nav{
     z-index: 100;
-    height:1.4rem;
+    height:1.8rem;
     width:100vw;
     font-family: monospace;
     position:fixed;
     top: 0;
-    font-size: 0.4rem;
+    font-size: 0.5rem;
     background-color: rgb(50, 190, 143);
     color: white;
 }
 
 .lpage-logo{
     position: relative;
-    width:1.8rem;
-    height:1rem;
-    line-height: 1.4rem;
+    width:2rem;
+    height:1.2rem;
+    line-height: 1.8rem;
 }
 
 #lpage-navbarCompanyLogo{
     position: absolute;
-    top:0.7rem;
+    top:0.9rem;
     left:6vw;
     height:100%;
-    width:1.8rem;
+    width:2rem;
     transform: translate(-50%, -50%);
     color:white;
 }
@@ -41,7 +41,7 @@
 #lpage-home{
     display: inline;
     margin-left: 6vw;
-    line-height: 1.4rem;
+    line-height: 1.8rem;
     cursor: pointer;
 }
 
@@ -54,34 +54,34 @@
 .lpage-navbarButton{
     display: none;
     height: 100%;
-    width: 0.8rem;
+    width: 1rem;
     float: right;
     margin-right: 3vw;
 }
 
 .lpage-navbarButton span{
     display: block;
-    height:0.1rem;
-    width:0.8rem;
+    height:0.2rem;
+    width:1rem;
     background-color: white;
 }
 
 #lpage-span1{
-    margin-top:0.5rem;
+    margin-top:0.6rem;
 }
 
 #lpage-span2{
-    margin-top:0.3rem;
+    margin-top:0.4rem;
 }
 
 #lpage-span3{
-    margin-top: 0.3rem;
+    margin-top: 0.4rem;
 }
 
 #lpage-about,#lpage-blogs,#lpage-login,#lpage-logout{
     display: inline;
     margin-left: 3vw;
-    line-height: 1.4rem;
+    line-height: 1.8rem;
     cursor: pointer;
 }
 
@@ -94,12 +94,12 @@
 }
 
 .dropbtn {
-    font-size: 0.4rem;
+    font-size: 0.5rem;
     display: inline-block;
     margin: 0;
     padding : 0;
-    margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
     width: 1rem;
     line-height: 1rem;
     text-align: center;
@@ -130,9 +130,9 @@
 
   .dropdown-content {
     display: none;
-    font-size: 0.3rem;
+    font-size: 0.4rem;
     position: absolute;
-    top:1.39rem;
+    top:1.5rem;
     min-width: 154px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -157,9 +157,9 @@
 @media  only screen and (max-width:768px) {
 
     .lpage-nav{
-        height: 2rem;
-        line-height: 2rem;
-        font-size:0.55rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        font-size:0.7rem;
     }
 
     .lpage-navbarButton{
@@ -172,7 +172,7 @@
 
     #lpage-home{
         margin-left:6vw;
-        line-height: 2rem;
+        line-height: 2.5rem;
     }
 
     .lpage-navbarRight{
@@ -189,9 +189,9 @@
      #lpage-about, .dropdown, .lpage-navbarRightActive #lpage-blogs, .lpage-navbarRightActive #lpage-login, .lpage-navbarRightActive #lpage-logout{
         display: block;
         width: 100vw;
-        height: 2rem;
-        line-height: 2rem;
-        font-size: 0.4rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        font-size: 0.5rem;
         margin: 0;
         padding-left:3vw ;
         border-bottom:0.1px solid rgb(50, 190, 143);
@@ -216,9 +216,9 @@
 
     .dropdown-content a {
         padding: 5px;
-        height: 1.2rem;
-        line-height: 1.2rem;
-        font-size: 0.4rem;
+        height: 1.4rem;
+        line-height: 1.4rem;
+        font-size: 0.5rem;
     }
 
 }
